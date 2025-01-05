@@ -1,0 +1,175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">smartclass</string>
+    <string name="label_back">Back</string>
+
+    <!-- Home Tabs -->
+    <string name="home_feed">Home</string>
+    <string name="home_favorites">Favorite</string>
+    <string name="home_profile">Profile</string>
+
+    <!-- BATAS -->
+    <string name="youtube_api_key">AIzaSyB0KNzod8ASPZsDzXQEARfUXLBGJxLQWl4</string>
+    <string name="ExpandMore">Expand More</string>
+
+    <!--  Profile Section  -->
+    <string name="profile">Profil</string>
+    <string name="account">Akun Saya</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="account_settings">Pengaturan Akun</string>
+    <string name="delete_account">Hapus Akun</string>
+    <string name="logout">Keluar</string>
+    <string name="language">Bahasa</string>
+    <string name="system_default">Default Sistem</string>
+    <string name="english">Inggris</string>
+    <string name="indonesian">Indonesia</string>
+    <string name="error_occurred">Terjadi Kesalahan</string>
+    <string name="error">Kesalahan</string>
+    <string name="ok">OK</string>
+    <string name="delete_confirmation_title">Konfirmasi Penghapusan</string>
+    <string name="delete_confirmation_message">Apakah Anda yakin ingin menghapus akun Anda? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="delete">Hapus</string>
+    <string name="cancel">Batal</string>
+    <string name="collapse">Sembunyikan</string>
+    <string name="expand">Tampilkan</string>
+
+    <!--  Feature Grid Section  -->
+    <string name="predict">Prediksi Offline</string>
+    <string name="ibu_hamil">Ibu Hamil</string>
+    <string name="pencegahan_stunting">Pencegahan Stunting</string>
+    <string name="penanganan_stunting">Penanganan Stunting</string>
+    <string name="info_produk">Info Produk</string>
+    <string name="resep_mpasi">Resep MPASI</string>
+
+    <!--  Child Section  -->
+    <string name="profile_child">Profil Anak</string>
+    <string name="no_child_profile">Ibu Bapak, belum punya profil anak</string>
+    <string name="add_child">Tambah Anak</string>
+    <string name="add_child_profile">Tambah Profil Anak</string>
+    <string name="height_cm">cm</string>
+    <string name="age_year_month">%1$d tahun %2$d bulan</string>
+    <string name="add">Tambah</string>
+
+    <!--  Recommended Article  -->
+    <string name="recommended_articles">Artikel Rekomendasi</string>
+    <string name="image_for">Gambar untuk %1$s</string>
+    <string name="placeholder_image">Gambar Placeholder</string>
+    <string name="see_more">Selengkapnya</string>
+    <string name="no_articles_available">Tidak ada artikel tersedia.</string>
+    <string name="view_count">Dilihat</string>
+    <string name="love_count">Suka</string>
+
+    <!--  Data Child Section  -->
+    <string name="loading_child_profile">Memuat Profil Anak...</string>
+    <string name="profile_child_01">Profil Anak</string>
+    <string name="update">Update</string>
+    <string name="delete_01">Delete</string>
+    <string name="last_updated">Terakhir diperbarui pada: %1$s</string>
+    <string name="generating_analysis">Menghasilkan Analisis...</string>
+    <string name="growth_analysis">Analisis Pertumbuhan</string>
+    <string name="delete_child_profile">Hapus Profil Anak</string>
+    <string name="delete_confirmation">Apakah Anda yakin ingin menghapus profil anak ini? Tindakan ini tidak dapat diurungkan.</string>
+    <string name="cancel_01">Batal</string>
+    <string name="confirm_delete">Ya, Hapus</string>
+    <!-- Labels untuk GrowthResultCard -->
+    <string name="label_height">Tinggi</string>
+    <string name="label_age">Umur</string>
+    <string name="label_gender">Gender</string>
+    <!-- Tambahkan string lainnya sesuai kebutuhan -->
+    <string name="height_unit">cm</string>
+    <string name="age_years">tahun</string>
+    <string name="age_months">bulan</string>
+
+    <!--  About Us Section  -->
+    <string name="about_smartclass">Tentang smartclass</string>
+    <string name="about_description">smartclass adalah aplikasi yang dirancang untuk membantu orang tua dan keluarga memahami, mencegah, dan menangani masalah stunting pada anak. Kami menyediakan informasi yang dapat dipercaya dan fitur-fitur yang mendukung tumbuh kembang anak secara optimal.</string>
+    <string name="team_smartclass">Tim smartclass</string>
+    <string name="contact_us">Kontak Kami</string>
+    <string name="contact_description">Jika Anda membutuhkan bantuan atau memiliki pertanyaan masalah mengenai aplikasi stunting pada anak, silakan hubungi kami melalui email di smartclassx@gmail.com atau telepon di +62 812-9657-9157.</string>
+    <string name="github">GitHub</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="admin_button">Admin Panel</string>
+    <string name="home_pesanan">Pesanan</string>
+    <string name="predictv2">Prediksi Online</string>
+    <string name="Loading">Memproses Data</string>
+
+    <!--  Syarat & ketentuan Section  -->
+    <string name="terms_and_conditions_title">Syarat dan Ketentuan smartclass</string>
+    <string name="terms_intro">Selamat datang di smartclass, aplikasi inovatif yang dirancang untuk membantu mencegah stunting pada anak melalui teknologi machine learning dan cloud computing.</string>
+    <string name="agree_instruction">Silakan setujui syarat dan ketentuan terlebih dahulu.</string>
+    <string name="agree_header">Dengan menggunakan aplikasi smartclass, Anda menyetujui syarat dan ketentuan berikut:</string>
+    <string name="agree_button_text">Saya Setuju</string>
+    <string name="thank_you_text">Terima kasih telah menerima syarat dan ketentuan. Anda siap untuk menggunakan smartclass!</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="language_english">Inggris</string>
+    <string name="language_indonesian">Indonesia</string>
+
+    <!-- Contoh poin terms dalam bahasa Indonesia -->
+    <string-array name="terms_points">
+        <item>Dengan menggunakan aplikasi smartclass, Anda setuju untuk mematuhi semua aturan yang berlaku.</item>
+        <item>Informasi yang Anda berikan harus akurat dan selalu diperbarui sesuai dengan perkembangan.</item>
+        <item>Anda bertanggung jawab atas aktivitas yang dilakukan dalam aplikasi ini.</item>
+        <item>Penggunaan aplikasi ini tunduk pada kebijakan privasi yang berlaku.</item>
+        <item>Semua konten dan data dalam aplikasi ini adalah hak cipta dari pengembang smartclass.</item>
+        <item>Kami berhak untuk mengubah atau menghentikan layanan kapan saja tanpa pemberitahuan.</item>
+        <item>Pelanggaran terhadap syarat dan ketentuan dapat mengakibatkan pembatasan akses.</item>
+    </string-array>
+
+    <!-- Daftar Akun Section -->
+    <string name="register_account">Daftar Akun</string>
+    <string name="back_to_login">Kembali ke Login</string>
+    <string name="register_image">Gambar Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="confirm_password_icon">Ikon Konfirmasi Kata Sandi</string>
+    <string name="password_mismatch">Kata sandi tidak cocok</string>
+    <string name="register_icon">Ikon Daftar</string>
+    <string name="register_button">Daftar</string>
+    <string name="register_terms_intro">Dengan mendaftar anda telah membaca dan menyetujui </string>
+    <string name="terms_conditions">Syarat &amp; Ketentuan</string>
+    <string name="register_terms_outro"> dari Tim smartclass.</string>
+    <string name="already_have_account">Sudah punya akun? </string>
+    <string name="login">Masuk</string>
+    <string name="registration_success">Registrasi berhasil! Silakan cek email Anda untuk verifikasi akun.</string>
+    <string name="verification_email_failed">Gagal mengirim email verifikasi: %1$s</string>
+    <string name="registration_failed">Registrasi gagal: %1$s</string>
+    <string name="fill_fields_correctly">Silakan isi semua field dengan benar.</string>
+
+    <!-- Login Email Section -->
+    <string name="login_with_email">Masuk dengan Email</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="dont_have_account">Belum punya akun? Silakan </string>
+    <string name="register">Daftar</string>
+    <string name="login_image_description">Gambar Login</string>
+    <string name="password_min_length">Password harus minimal 8 karakter</string>
+    <string name="login_icon_description">Ikon Login</string>
+    <string name="toggle_password_visibility">Toggle Password Visibility</string>
+    <string name="verify_and_login">Verifikasi &amp; Masuk</string>
+    <string name="verification_code">Kode Verifikasi</string>
+    <string name="verification_message">Sebuah kode verifikasi telah dikirim ke email Anda.</string>
+    <string name="back_to_google_login">Kembali ke Login Google</string>
+    <string name="email_icon_description">Ikon Email</string>
+    <string name="password_icon_description">Ikon Password</string>
+
+    <!-- Login Email Section -->
+    <string name="forgot_password_title">Lupa Password</string>
+    <string name="email_hint">Email</string>
+    <string name="reset_password">Atur Ulang Kata Sandi</string>
+    <string name="email_required_error">Silakan masukkan email Anda.</string>
+    <string name="reset_email_sent">Email atur ulang kata sandi telah dikirim.</string>
+    <string name="reset_email_failed">Gagal mengirim email atur ulang kata sandi.</string>
+    <string name="forgot_password_image_description">Forgot Password Illustration</string>
+
+    <!-- Welcome Section -->
+    <string-array name="carousel_titles_default">
+        <item>Selamat Datang Di smartclass</item>
+        <item>Stunting? Stop! Anak Sehat, Masa Depan Cerah.</item>
+        <item>Monitor Kesehatan Anak</item>
+    </string-array>
+    <string-array name="carousel_descriptions_default">
+        <item>"smartclass" adalah aplikasi inovatif yang membantu orang tua memantau pertumbuhan anak dan memberikan informasi penting tentang pencegahan stunting, dengan tips kesehatan dan gizi yang mudah diakses.</item>
+        <item>Jangan biarkan stunting mencuri masa depan anakmu. Dengan smartclass, pantau tumbuh kembang si kecil, pastikan nutrisinya tercukupi.</item>
+        <item>Monitor kesehatan anak secara rutin. Pastikan nutrisi seimbang, tumbuh kembang optimal, dan akses layanan kesehatan. Cegah stunting, wujudkan generasi sehat dan cerdas!</item>
+    </string-array>
+
+</resources>
