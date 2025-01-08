@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">smartclass</string>
+    <string name="app_name">Smart Class</string>
     <string name="label_back">Back</string>
 
     <!-- Home Tabs -->
@@ -14,7 +14,7 @@
     <!--  Profile Section  -->
     <string name="profile">Profile</string>
     <string name="account">My Account</string>
-    <string name="about_us">About Us</string>
+    <string name="mainadmin">Admin Panel</string>
     <string name="account_settings">Account Settings</string>
     <string name="delete_account">Delete Account</string>
     <string name="logout">Logout</string>
@@ -39,126 +39,12 @@
     <string name="penanganan_stunting">Stunting Management</string>
     <string name="info_produk">Product Info</string>
     <string name="resep_mpasi">MPASI Recipes</string>
+    <string name="predictv2">Prediksi Online</string>
 
     <!--  Child Section  -->
     <string name="profile_child">Child Profile</string>
-    <string name="no_child_profile">You don\'t have any child profiles yet</string>
-    <string name="add_child">Add Child</string>
-    <string name="add_child_profile">Add Child Profile</string>
-    <string name="height_cm">cm</string>
-    <string name="age_year_month">%1$d years %2$d months</string>
-    <string name="add">Add</string>
-
-    <!--  Recommended Article  -->
-    <string name="recommended_articles">Recommended Articles</string>
-    <string name="image_for">Image for %1$s</string>
-    <string name="placeholder_image">Placeholder Image</string>
-    <string name="see_more">See More</string>
-    <string name="no_articles_available">No articles available.</string>
-    <string name="view_count">Views</string>
-    <string name="love_count">Likes</string>
-
-    <!--  Data Child Section  -->
-    <string name="loading_child_profile">Loading Child Profile…</string>
-    <string name="profile_child_01">Child Profile</string>
-    <string name="update">Update</string>
-    <string name="delete_01">Delete</string>
-    <string name="last_updated">Last updated on: %1$s</string>
-    <string name="generating_analysis">Generating Analysis…</string>
-    <string name="growth_analysis">Growth Analysis</string>
-    <string name="delete_child_profile">Delete Child Profile</string>
-    <string name="delete_confirmation">Are you sure you want to delete this child profile? This action cannot be undone.</string>
-    <string name="cancel_01">Cancel</string>
-    <string name="confirm_delete">Yes, Delete</string>
-    <!-- Labels untuk GrowthResultCard -->
-    <string name="label_height">Height</string>
-    <string name="label_age">Age</string>
-    <string name="label_gender">Gender</string>
-    <!-- Tambahkan string lainnya sesuai kebutuhan -->
-    <string name="height_unit">cm</string>
-    <string name="age_years">years</string>
-    <string name="age_months">months</string>
-
-    <!--  About Us Section  -->
-    <string name="about_smartclass">About smartclass</string>
-    <string name="about_description">smartclass is an application designed to help parents and families understand, prevent, and handle stunting issues in children. We provide reliable information and features that support optimal child development.</string>
-    <string name="team_smartclass">smartclass Team</string>
-    <string name="contact_us">Contact Us</string>
-    <string name="contact_description">If you need assistance or have questions regarding the stunting application for children, please contact us via email at smartclassx@gmail.com or phone at +62 812–9657–9157.</string>
-    <string name="github">GitHub</string>
-    <string name="linkedin">LinkedIn</string>
-    <string name="home_pesanan">Orders</string>
-    <string name="admin_button">Admin Panel</string>
-    <string name="predictv2">Predict Online</string>
-    <string name="Loading">Processing Data</string>
-
-    <!--  Syarat & ketentuan Section  -->
-    <string name="terms_and_conditions_title">Terms and Conditions of smartclass</string>
-    <string name="terms_intro">Welcome to smartclass, an innovative app designed to help prevent stunting in children through machine learning and cloud computing.</string>
-    <string name="agree_instruction">Please agree to the terms and conditions first.</string>
-    <string name="agree_header">By using the smartclass app, you agree to the following terms and conditions:</string>
-    <string name="agree_button_text">I Agree</string>
-    <string name="thank_you_text">Thank you for accepting the terms and conditions. You are ready to use smartclass!</string>
-    <string name="change_language">Change Language</string>
-    <string name="language_english">English</string>
-    <string name="language_indonesian">Indonesian</string>
-
-    <!-- Contoh poin terms -->
-    <string-array name="terms_points">
-        <item>By using the smartclass app, you agree to comply with all applicable rules.</item>
-        <item>The information you provide must be accurate and always updated accordingly.</item>
-        <item>You are responsible for the activities carried out in this application.</item>
-        <item>The use of this application is subject to the applicable privacy policy.</item>
-        <item>All content and data in this application are copyrighted by smartclass developers.</item>
-        <item>We reserve the right to change or discontinue services at any time without notice.</item>
-        <item>Violations of the terms and conditions may result in restricted access.</item>
-    </string-array>
-
-    <!-- Daftar Akun Section -->
-    <string name="register_account">Register Account</string>
-    <string name="back_to_login">Back to Login</string>
-    <string name="register_image">Register Image</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="confirm_password_icon">Confirm Password Icon</string>
-    <string name="password_mismatch">Passwords do not match</string>
-    <string name="register_icon">Register Icon</string>
-    <string name="register_button">Register</string>
-    <string name="register_terms_intro">By registering, you agree to our </string>
-    <string name="terms_conditions">Terms &amp; Conditions</string>
-    <string name="register_terms_outro">.</string>
-    <string name="already_have_account">Already have an account? </string>
-    <string name="login">Login</string>
-    <string name="registration_success">Registration successful! Please check your email for verification.</string>
-    <string name="verification_email_failed">Failed to send verification email: %1$s</string>
-    <string name="registration_failed">Registration failed: %1$s</string>
-    <string name="fill_fields_correctly">Please fill in all fields correctly.</string>
-
-    <!-- Login Email Section -->
-    <string name="login_with_email">Login with Email</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="dont_have_account">Don\'t have an account? Please </string>
-    <string name="register">Register</string>
-    <string name="login_image_description">Login Image</string>
-    <string name="password_min_length">Password must be at least 8 characters</string>
-    <string name="login_icon_description">Login Icon</string>
-    <string name="toggle_password_visibility">Toggle Password Visibility</string>
-    <string name="verify_and_login">Verify &amp; Login</string>
-    <string name="verification_code">Verification Code</string>
-    <string name="verification_message">A verification code has been sent to your email.</string>
-    <string name="back_to_google_login">Back to Google Login</string>
-    <string name="email_icon_description">Email Icon</string>
-    <string name="password_icon_description">Password Icon</string>
-
-    <!-- Login Email Section -->
-    <string name="forgot_password_title">Forgot Password</string>
-    <string name="email_hint">Email</string>
-    <string name="reset_password">Reset Password</string>
-    <string name="email_required_error">Please enter your email.</string>
-    <string name="reset_email_sent">Password reset email sent.</string>
-    <string name="reset_email_failed">Failed to send reset email.</string>
-    <string name="forgot_password_image_description">Forgot Password Illustration</string>
+    <string name="home_pesanan">Pesanan</string>
+    <string name="add_child_profile">Add Child\n</string>
 
     <!-- Welcome Section -->
     <string-array name="carousel_titles_default">
@@ -172,4 +58,15 @@
         <item>Monitor your child\'s health regularly. Ensure balanced nutrition, optimal growth and development, and access to health services. Prevent stunting, create a healthy and smart generation!</item>
     </string-array>
 
+    <string-array name="onboarding_titles_default">
+        <item>Welcome to the Student Attendance System</item>
+        <item>Track Student Attendance</item>
+        <item>Easy Reporting</item>
+    </string-array>
+
+    <string-array name="onboarding_descriptions_default">
+        <item>Our system helps you monitor and track the attendance of students effectively and efficiently.</item>
+        <item>Monitor each student\'s attendance and gain insights into their participation in class.</item>
+        <item>Generate easy-to-read reports to assess overall student attendance and make informed decisions.</item>
+    </string-array>
 </resources>

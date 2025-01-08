@@ -83,11 +83,11 @@ fun SplashScreen(onTimeout: () -> Unit) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 AnimatedLogo(
-                    drawableId = R.drawable.assets_logo_smartclass_clean,
+                    drawableId = R.drawable.assets_logo_smartclass_clean_new,
                     description = "Top Logo",
                     modifier = Modifier
                         .padding(top = 32.dp)
-                        .size(80.dp)
+                        .size(50.dp)
                 )
 
                 AnimatedPartnerSection()
@@ -156,7 +156,7 @@ fun AnimatedPartnerSection() {
             .offset(y = slideAnim)
     ) {
         Text(
-            text = "Program By",
+            text = "Made in From",
             style = MaterialTheme.typography.titleMedium,
             color = Color.Black.copy(0.4f)
         )
@@ -165,19 +165,9 @@ fun AnimatedPartnerSection() {
             modifier = Modifier.padding(top = 8.dp)
         ) {
             AnimatedImage(
-                drawableId = R.drawable.assets_logo_bangkit_academy,
-                description = "Mitra 1 Logo",
+                drawableId = R.drawable.assets_logo_unindra,
+                description = "Universitas Indraprasta PGRI",
                 modifier = Modifier.size(75.dp)
-            )
-            AnimatedImage(
-                drawableId = R.drawable.assets_logo_msib,
-                description = "Mitra 2 Logo",
-                modifier = Modifier.size(75.dp)
-            )
-            AnimatedImage(
-                drawableId = R.drawable.assets_logo_kampus_merdeka,
-                description = "Mitra 3 Logo",
-                modifier = Modifier.size(70.dp)
             )
         }
     }

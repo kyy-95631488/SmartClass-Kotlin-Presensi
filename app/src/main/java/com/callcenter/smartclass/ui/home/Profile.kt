@@ -149,11 +149,11 @@ fun Profile(navController: NavHostController, modifier: Modifier = Modifier) {
                 )
 
                 ProfileItem(
-                    title = stringResource(id = R.string.about_us),
-                    icon = Icons.Default.Info,
+                    title = stringResource(id = R.string.mainadmin),
+                    icon = Icons.Default.AdminPanelSettings,
                     color = Color(0xFF1976D2),
                     onClick = {
-                        navController.navigate("aboutus")
+                        navController.navigate("mainadmin")
                     }
                 )
 
@@ -303,8 +303,8 @@ fun ProfileItem(
             .padding(
                 start = if (isSubItem) 16.dp else 8.dp,
                 end = if (isSubItem) 16.dp else 8.dp,
-                top = if (isSubItem) 4.dp else 8.dp,
-                bottom = if (isSubItem) 4.dp else 8.dp
+                top = if (isSubItem) 4.dp else 4.dp,
+                bottom = if (isSubItem) 4.dp else 4.dp
             )
             .clickable(
                 onClick = {

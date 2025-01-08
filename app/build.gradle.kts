@@ -6,8 +6,7 @@ plugins {
 
     id("com.google.gms.google-services")
     kotlin("plugin.serialization") version "2.0.20"
-//    kotlin("ksp")
-    id("com.google.devtools.ksp") version "2.0.20-1.0.25"
+    id("com.google.devtools.ksp") version "2.0.21-1.0.27"
 }
 
 android {
@@ -21,7 +20,7 @@ android {
         versionCode = 2
         versionName = "2.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "GEMINI_API_KEY", "\"${System.getenv("GEMINI_API_KEY") ?: "AIzaSyDYMwp3N_BGpRCCk-Nfu57SdOLHbPZS55U"}\"")
+        buildConfigField("String", "GEMINI_API_KEY", "\"${System.getenv("GEMINI_API_KEY") ?: "AIzaSyDjZ7W_6z4mjN94zMF_BcPMUL972LovOFo"}\"")
     }
 
     signingConfigs {
@@ -146,16 +145,12 @@ dependencies {
 
     implementation(libs.accompanist.placeholder.material)
     implementation(libs.firebase.storage.ktx)
-//
-//    implementation("com.google.android.gms:play-services-tflite-java:16.3.0")
-//    implementation("com.google.android.gms:play-services-tflite-gpu:16.3.0")
-//
-//    implementation("org.tensorflow:tensorflow-lite:2.16.1")
+
     implementation(libs.tensorflow.lite.support)
 
     implementation(libs.compose.m3)
     implementation(libs.uikit)
-//    implementation("com.midtrans:uikit:2.3.0")
+    //    implementation("com.midtrans:uikit:2.3.0")
 
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)

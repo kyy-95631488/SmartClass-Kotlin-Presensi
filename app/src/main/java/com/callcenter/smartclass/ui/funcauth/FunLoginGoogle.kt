@@ -21,7 +21,6 @@ import com.callcenter.smartclass.model.SharedPreferencesHelper
 import com.callcenter.smartclass.ui.smartclassApp
 import com.callcenter.smartclass.ui.theme.smartclassTheme
 import com.callcenter.smartclass.ui.uionly.GoogleLoginScreen
-import com.callcenter.smartclass.ui.uionly.UiLoginViaEmail
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -77,7 +76,6 @@ class FunLoginGoogle : ComponentActivity() {
             smartclassTheme {
                 GoogleLoginScreen(
                     onClick = { checkInternetAndSignIn() },
-                    onEmailLoginClick = { navigateToEmailLogin() },
                     selectedLanguage = selectedLanguage
                 )
             }
@@ -116,7 +114,7 @@ class FunLoginGoogle : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.R)
     private fun showNoInternetDialog() {
         runOnUiThread {
-            val selectedLanguage = LocaleManager.getLanguage(this) // Ambil bahasa yang dipilih
+            val selectedLanguage = LocaleManager.getLanguage(this)
 
             AlertDialog.Builder(this)
                 .setTitle("No Internet Connection")
@@ -127,8 +125,7 @@ class FunLoginGoogle : ComponentActivity() {
                         smartclassTheme {
                             GoogleLoginScreen(
                                 onClick = { checkInternetAndSignIn() },
-                                onEmailLoginClick = { navigateToEmailLogin() },
-                                selectedLanguage = selectedLanguage // Tambahkan parameter ini
+                                selectedLanguage = selectedLanguage
                             )
                         }
                     }
@@ -154,26 +151,22 @@ class FunLoginGoogle : ComponentActivity() {
                     user?.let {
                         assignUserRole(it)
 
-                        // Mendapatkan ID Token (JWT)
                         it.getIdToken(true)
                             .addOnCompleteListener { tokenTask ->
                                 if (tokenTask.isSuccessful) {
                                     val idToken = tokenTask.result?.token
                                     val expirationTime = tokenTask.result?.expirationTimestamp
 
-                                    // Pastikan expirationTime dalam milidetik
                                     if (idToken != null && expirationTime != null) {
-                                        SharedPreferencesHelper.saveToken(this, idToken, expirationTime * 1000) // Konversi ke milidetik
+                                        SharedPreferencesHelper.saveToken(this, idToken, expirationTime * 1000)
                                         Log.d("FunLoginGoogle", "Token disimpan dengan sukses")
                                     }
 
                                     Log.d("FunLoginGoogle", "ID Token: $idToken")
 
-                                    // Pindahkan setContent ke sini setelah token disimpan
                                     setContent { smartclassApp() }
                                 } else {
                                     Log.e("FunLoginGoogle", "Gagal mendapatkan ID Token", tokenTask.exception)
-                                    // Anda bisa menampilkan dialog kesalahan di sini jika diperlukan
                                 }
                             }
                     }
@@ -246,22 +239,13 @@ class FunLoginGoogle : ComponentActivity() {
                 .setMessage(errorMessage ?: "Unknown error occurred.")
                 .setPositiveButton("Retry") { dialog, _ ->
                     dialog.dismiss()
-                    checkInternetAndSignIn() // Jangan reset tampilan di sini
+                    checkInternetAndSignIn()
                 }
                 .setNegativeButton("Cancel") { dialog, _ ->
                     dialog.dismiss()
                 }
                 .setCancelable(false)
                 .show()
-        }
-    }
-
-    @RequiresApi(Build.VERSION_CODES.R)
-    private fun navigateToEmailLogin() {
-        setContent {
-            smartclassTheme {
-                UiLoginViaEmail()
-            }
         }
     }
 }
@@ -274,8 +258,7 @@ fun PreviewGoogleLoginScreen() {
     smartclassTheme {
         GoogleLoginScreen(
             onClick = {},
-            onEmailLoginClick = {},
-            selectedLanguage = "en" // Tambahkan parameter ini
+            selectedLanguage = "en"
         )
     }
 }

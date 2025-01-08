@@ -54,22 +54,21 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.callcenter.smartclass.ui.components.remembersmartclassScaffoldState
 import com.callcenter.smartclass.ui.components.smartclassScaffold
 import com.callcenter.smartclass.ui.components.smartclassSnackbar
-import com.callcenter.smartclass.ui.components.remembersmartclassScaffoldState
 import com.callcenter.smartclass.ui.home.DeliveryOptionsPanel
 import com.callcenter.smartclass.ui.home.DestinationBar
 import com.callcenter.smartclass.ui.home.HomeSections
-import com.callcenter.smartclass.ui.home.smartclassBottomBar
 import com.callcenter.smartclass.ui.home.addHomeGraph
-import com.callcenter.smartclass.ui.home.childprofile.AddChildProfileScreen
 import com.callcenter.smartclass.ui.home.composableWithCompositionLocal
+import com.callcenter.smartclass.ui.home.smartclassBottomBar
 import com.callcenter.smartclass.ui.navigation.MainDestinations
 import com.callcenter.smartclass.ui.navigation.remembersmartclassNavController
 import com.callcenter.smartclass.ui.options.AIInteraction
 import com.callcenter.smartclass.ui.options.YouTubeHealth
-import com.callcenter.smartclass.ui.theme.smartclassTheme
 import com.callcenter.smartclass.ui.theme.Ocean8
+import com.callcenter.smartclass.ui.theme.smartclassTheme
 import com.callcenter.smartclass.ui.uionly.VerifyEmailScreen
 import com.google.firebase.auth.FirebaseAuth
 import kotlin.math.roundToInt
@@ -222,9 +221,6 @@ fun MainContainer(
                         }
                         composable(MainDestinations.AI_INTERACTION_ROUTE) { backStackEntry ->
                             AIInteraction(onClose = { navController.navigateUp() })
-                        }
-                        composable(MainDestinations.ADD_CHILD_PROFILE_ROUTE) {
-                            AddChildProfileScreen(navController = navController)
                         }
                     }
                 }

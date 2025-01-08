@@ -21,7 +21,6 @@ import androidx.navigation.compose.rememberNavController
 import com.callcenter.smartclass.model.SharedPreferencesHelper
 import com.callcenter.smartclass.ui.components.smartclassSurface
 import com.callcenter.smartclass.ui.funcauth.FunLoginGoogle
-import com.callcenter.smartclass.ui.home.article.ArticleRecommendation
 import com.callcenter.smartclass.ui.home.childprofile.ChildProfileSection
 import com.callcenter.smartclass.ui.home.imagecarousel.ImageCarousel
 import com.callcenter.smartclass.ui.home.mainfeaturesgrid.MainFeaturesGrid
@@ -100,15 +99,15 @@ fun FeedContent(
             item {
                 ImageCarousel()
             }
-            item {
-                ArticleRecommendation(
-                    onArticleClick = { uuid ->
-                    navController.navigate("articleDetail/$uuid")
-                },
-                    onSeeMoreClick = {
-                        navController.navigate("articleList")
-                    })
-            }
+//            item {
+//                ArticleRecommendation(
+//                    onArticleClick = { uuid ->
+//                    navController.navigate("articleDetail/$uuid")
+//                },
+//                    onSeeMoreClick = {
+//                        navController.navigate("articleList")
+//                    })
+//            }
         }
     }
 }

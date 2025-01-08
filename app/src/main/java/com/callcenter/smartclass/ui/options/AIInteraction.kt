@@ -325,7 +325,7 @@ private fun createImageFile(context: Context): File {
 private suspend fun sendMessage(userMessage: String, images: List<Bitmap>, messages: SnapshotStateList<Message>) {
     val apiKey = BuildConfig.GEMINI_API_KEY
     val generativeModel = GenerativeModel(
-        modelName = "gemini-1.5-flash",
+        modelName = "gemini-2.0-flash-exp",
         apiKey = apiKey
     )
 

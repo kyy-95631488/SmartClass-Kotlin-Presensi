@@ -1,7 +1,5 @@
 package com.callcenter.smartclass.ui
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -11,14 +9,14 @@ import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
 import com.callcenter.smartclass.ui.funcauth.FunLoginGoogle
 import com.callcenter.smartclass.ui.uionly.SplashScreen
 import com.google.firebase.auth.FirebaseAuth
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 
 class MainActivity : ComponentActivity() {
     private lateinit var auth: FirebaseAuth
@@ -28,25 +26,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
-        createNotificationChannel()
 
         setContent {
             smartclassAppWithSplash()
-        }
-    }
-
-    private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channelName = "Jadwal Menu Anak"
-            val channelDescription = "Notifikasi untuk jadwal menu harian anak."
-            val importance = NotificationManager.IMPORTANCE_HIGH
-            val channel = NotificationChannel("jadwal_menu_channel", channelName, importance).apply {
-                description = channelDescription
-            }
-
-            val notificationManager: NotificationManager =
-                getSystemService(NotificationManager::class.java)
-            notificationManager.createNotificationChannel(channel)
         }
     }
 

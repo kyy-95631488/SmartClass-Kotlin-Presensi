@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "144241347805",
-    "project_id": "kidcare-info",
-    "storage_bucket": "kidcare-info.firebasestorage.app"
+    "project_number": "313741419695",
+    "project_id": "smart-class-rf",
+    "storage_bucket": "smart-class-rf.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:144241347805:android:d45937bfd2a85a88779f34",
+        "mobilesdk_app_id": "1:313741419695:android:4a991c68b77c1e767f605a",
         "android_client_info": {
           "package_name": "com.callcenter.smartclass"
         }
       },
       "oauth_client": [
         {
-          "client_id": "144241347805-kobhsa27279gi0vui3qhn3lvnneepi6r.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.callcenter.smartclass",
-            "certificate_hash": "f170ac2e88f0d9133c3f27a1824cccb45c76f3e3"
-          }
-        },
-        {
-          "client_id": "144241347805-itvnat6rueq7vh73lmb4m9hdvl2vbmii.apps.googleusercontent.com",
+          "client_id": "313741419695-1q7eidfbsfp4hrudhi7etoor521au6lm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAiNFaZnLwcPOMxCkXLRspHpsdCiWwlOjQ"
+          "current_key": "AIzaSyAbldGjSHu-maoV9RxWpXxN5SKAbhGU-Sw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "144241347805-itvnat6rueq7vh73lmb4m9hdvl2vbmii.apps.googleusercontent.com",
+              "client_id": "313741419695-1q7eidfbsfp4hrudhi7etoor521au6lm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

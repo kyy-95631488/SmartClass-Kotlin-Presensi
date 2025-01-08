@@ -62,13 +62,13 @@ fun MainFeaturesGrid(navController: NavController) {
                     .clip(RoundedCornerShape(12.dp))
                     .clickable {
                         when (textRes) {
-                            R.string.predict -> navController.navigate("predict")
-                            R.string.predictv2 -> navController.navigate("predictv2")
-                            R.string.ibu_hamil -> navController.navigate("ibu_hamil")
-                            R.string.pencegahan_stunting -> navController.navigate("pencegahan_stunting")
-                            R.string.penanganan_stunting -> navController.navigate("penanganan_stunting")
-                            R.string.info_produk -> navController.navigate("info_produk")
-                            R.string.resep_mpasi -> navController.navigate("resepMpasiList")
+//                            R.string.predict -> navController.navigate("predict")
+//                            R.string.predictv2 -> navController.navigate("predictv2")
+//                            R.string.ibu_hamil -> navController.navigate("ibu_hamil")
+//                            R.string.pencegahan_stunting -> navController.navigate("pencegahan_stunting")
+//                            R.string.penanganan_stunting -> navController.navigate("penanganan_stunting")
+//                            R.string.info_produk -> navController.navigate("info_produk")
+//                            R.string.resep_mpasi -> navController.navigate("resepMpasiList")
                         }
                     },
                 shape = RoundedCornerShape(12.dp)

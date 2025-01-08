@@ -14,7 +14,6 @@ object MainDestinations {
     const val HOME_ROUTE = "home"
     const val YOUTUBE_HEALTH_ROUTE = "youtubehealth"
     const val AI_INTERACTION_ROUTE = "aiinteraction"
-    const val ADD_CHILD_PROFILE_ROUTE = "add_child_profile"
 }
 
 @Composable
